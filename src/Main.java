@@ -1,13 +1,23 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+import java.sql.SQLOutput;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] array = {4,8,3,10,17};
+
+        //subpunct1
+        int max = MaximaleZahl.findeMaximaleZahl(array);
+        System.out.println("Maximale Zahl: " + max);
+
+        //subpunct2
+        int min = MinimaleZahl.findeMinimaleZahl(array);
+        System.out.println("Minimale Zahl: " + min);
+
+        //subpunct3
+        System.out.println("Maximale Summe von n-1 Zahlen: " + MaximaleSummeMin1.findeMaximaleSummeMin1(array, min));
+
+        //subpunct4
+        System.out.println("Maximale Summe von n-1 Zahlen: " + MinimaleSummeMin1.findeMinimaleSummeMin1(array, max));
+
     }
 }
